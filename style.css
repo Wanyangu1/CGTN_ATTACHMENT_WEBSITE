@@ -1,0 +1,86 @@
+*{
+padding: 0;
+margin: 0;
+text-decoration: none;
+list-style: none;
+box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+nav{
+    background: rgb(175, 175, 14);
+    height: 80px;
+    width: 100%;
+}
+label.logo{
+    color: rgb(24, 131, 32);
+    font-size: 35px;
+    line-height: 40px;
+    padding: 20px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+display: inline-block;
+line-height: 80px;
+margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+nav ul li ul{
+    position: absolute;
+    display: none;
+    background-color: maroon; 
+    border-radius: 0px 0px 5px;
+}
+nav ul li:hover ul{
+    display: block;
+}
+nav ul li ul li{
+    line-height: 1;
+    width: 170px;
+    border-radius: 3px;
+    padding: 4px;
+}
+a.active,a:hover{
+    background: greenyellow;
+    transition: .5s;
+}
+section{
+    background: url(NATEMBEYA.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+    background-blend-mode: darken;
+}
+.button-container{
+    margin: 15px 0;
+    position: relative;
+}
+.button-container button{
+    margin: 0;
+    left: 32%;
+    position: absolute;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 40%;
+    margin-top: 30px;
+    padding: 7px;
+    display: block;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    border-radius: 40px;
+    background-image: linear-gradient(to right, green,orange);
+}
+.button-container button:hover{
+    background-image: linear-gradient(to right, purple,blue);
+}
